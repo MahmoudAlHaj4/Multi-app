@@ -29,6 +29,35 @@ const Weather = ()=>{
     },[])
 
     return (
-        <div></div>
+        <div className="main-container"> 
+        <div className="weather">
+            <div className="heading">
+                <h1>Weather Forecast</h1>
+            </div>
+            <div className="card">
+            <table className="card-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Max Temperature (°C)</th>
+                        <th>Min Temperature (°C)</th>
+                        <th>Avg Wind Speed (km)</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        {weatherdata.map((item, index) => (
+                            <tr key={index}>
+                                <td>{item.date}</td>
+                                <td>{item.maxTemperature}</td>
+                                <td>{item.minTemperature}</td>
+                                <td>{item.avgWindSpeed}</td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
+           
+        </div>
+        </div>
     )
 }
