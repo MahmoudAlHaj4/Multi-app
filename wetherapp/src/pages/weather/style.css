@@ -1,0 +1,31 @@
+.main-container{
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    background-color: blue;
+    width: 100%;
+    height: 100vh;
+    
+}
+.weather{
+    background-color: aqua;
+    width: 50%;
+}
+.heading{
+    width: 100%;
+    height: 100px;
+    background-color: blueviolet;
+}
+.card{
+    background-color: brown;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+}
+
+.table-card{
+    border-spacing: 10px
+}
+.table-card th ,.table-card td{
+    padding: 10px;
+}

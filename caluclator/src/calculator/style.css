@@ -1,0 +1,39 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+
+}
+.Calc-box{
+    width: 20%;
+    height: 390px;
+    background-color: rebeccapurple;
+    border-radius: 15px;
+}
+.display{
+    width: 100%;
+    height: 70px;
+    /* background-color: red; */margin-bottom: 7px;
+    display: flex;
+}
+.display input{
+    width: 86%;
+    height: 70px;
+    background-color: #31363F;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 50px;
+    
+}
+.btns input{
+    width: 25%;
+    height: 70px;
+    margin-top: 5px;
+    border-radius: 7px;
+    background-color: #76ABAE;
+    font-size: 20px;
+}
