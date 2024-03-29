@@ -14,6 +14,11 @@ const Notes =()=>{
         updatedNotes[index] = newText;
         setNotes(updatedNotes);
     };
+
+    const deleteNote = (dnote) => {
+        const delNote = notes.filter((note, index) => index !== dnote);
+        setNotes(delNote);
+    };
     return (
 <div className="notes">
             <button onClick={CreateNote}>Create</button>
