@@ -16,19 +16,26 @@ const Notes =()=>{
     };
     return (
 <div className="notes">
-            <div className="heading">
-                <h1>Notes</h1>
-            </div>
-            <div className="create-note">
-                <div className="note-heading">
-                    <h2>Note</h2>
-                    <button>x</button>
+            <button onClick={CreateNote}>Create</button>
+            {notes.map((note, index) => (
+                <div className="card" key={index}>
+                    <div className="create-note">
+                        <div className="note-heading">
+                            <h2>Note</h2>
+                            <button>x</button>
+                        </div>
+                        <div className="text">
+                            <input 
+                                type="text"
+                                value={note} 
+                                onChange={(e) => InputChange(index, e.target.value)}
+                                placeholder="Enter your note" 
+                            />
+                        </div>
+                    </div>
                 </div>
-                
-                <div>
-                    <input type="text" />
-                </div>
-            </div>
+            ))}
+           
         </div>
     )
 }
