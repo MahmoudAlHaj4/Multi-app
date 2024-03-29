@@ -4,8 +4,18 @@ import "./style.css"
 
 
 const Notes =()=>{
+     const [notes,setNotes] = useState([])
+
+     const CreateNote = (e)=>{
+        setNotes([...notes,""])
+     }
+     const InputChange = (index, newText) => {
+        const updatedNotes = [...notes];
+        updatedNotes[index] = newText;
+        setNotes(updatedNotes);
+    };
     return (
-        <div className="notes">
+<div className="notes">
             <div className="heading">
                 <h1>Notes</h1>
             </div>
