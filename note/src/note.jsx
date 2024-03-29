@@ -21,7 +21,7 @@ const Notes =()=>{
     };
     return (
 <div className="notes">
-            <button onClick={CreateNote}>Create</button>
+            <button onClick={CreateNote} className="create">Create</button>
             {notes.map((note, index) => (
                 <div className="card" key={index}>
                     <div className="create-note">
