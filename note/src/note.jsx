@@ -21,8 +21,11 @@ const Notes =()=>{
                 <div className="card" key={index}>
                     <div className="create-note">
                         <div className="note-heading">
-                            <h2>Note</h2>
-                            <button>x</button>
+                            <h3>Note</h3>
+                            <div>
+                                <button className="del" onClick={() => deleteNote(index)}>x</button>
+                            </div>
+                            
                         </div>
                         <div className="text">
                             <input 
